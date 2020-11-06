@@ -9,6 +9,8 @@ import { ShirtsComponent } from './shirts/shirts.component';
 import { ShoesComponent } from './shoes/shoes.component';
 import { FooterComponent } from './footer/footer.component';
 import { SportwearComponent } from './sportwear/sportwear.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { SportwearComponent } from './sportwear/sportwear.component';
     ShirtsComponent,
     ShoesComponent,
     FooterComponent,
-    SportwearComponent
+    SportwearComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
