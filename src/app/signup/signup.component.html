@@ -1,1 +1,42 @@
-<p>signup works!</p>
+<app-navbar></app-navbar>
+
+<div class="jumbotron reg">
+    <h1><b>Welcome to E-commerce</b></h1><br>
+
+    <div id="det" class="container">
+        <p><b>User Registration</b></p>
+
+        <form>
+            <div class="form-group">
+                <div class="form-group">
+
+                    <input type="text" class="form-control" id="exampleInputusername"
+                        [(ngModel)]="register.username" name="username" placeholder="username">
+                </div>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    [(ngModel)]="register.email" name="email" placeholder="Email address">
+                <small id="emailHelp" class="form-text text-muted">We've kept it a secret!</small>
+
+                <!-- <input [(ngModel)]="person.myfirstName" [ngModelOptions]="{standalone: true}"> -->
+                <div class="form-group">
+
+                    <input type="password" class="form-control" id="exampleInputPassword1"
+                        [(ngModel)]="register.password" name="password" placeholder="password ">
+                </div>
+
+                <div class="form-group">
+                    <input type="password" class="form-control" id="exampleInputPassword2"
+                        [(ngModel)]="register.password" name="confirm_password" placeholder="confirm password">
+                </div>
+                <button (click)="registerUser()" type="submit" class="btn btn-primary">Register</button>
+            </div>
+
+        </form>
+
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Already have an account?  <a   class="ml-2 signup_link" routerLink="/login" >Sign In</a>
+            </small>
+        </div>
+    </div>
+</div>

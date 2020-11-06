@@ -11,6 +11,8 @@ import { FooterComponent } from './footer/footer.component';
 import { SportwearComponent } from './sportwear/sportwear.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,10 +25,13 @@ import { SignupComponent } from './signup/signup.component';
     SportwearComponent,
     LoginComponent,
     SignupComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
